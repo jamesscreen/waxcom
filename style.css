@@ -111,7 +111,7 @@ header nav a:hover{
   width: 100%;
   max-width: 1920px;
   
-  background-color: aquamarine;
+/*  background-color: aquamarine;*/
   overflow-x: hidden;
   
   display: flex;
@@ -356,7 +356,7 @@ header nav a:hover{
 	right: 0;
 }
 
-@media screen and (max-width: 1252px) {
+@media screen and (max-width: 1255px) {
   .ideas-img {
     width: 100%;
     overflow-x: hidden;
@@ -366,6 +366,7 @@ header nav a:hover{
 
 
 /* Text Boxes */
+
 .sale_field {
 	background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
 	background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
@@ -374,10 +375,18 @@ header nav a:hover{
 	background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
   width: 100%;
 	min-height: 150px;
-	margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.sale_field .padding-side{
-	padding-top: 48px;
+.sale_field .text-box {
+  width: 1170px;
+  max-width: 1230px;
+  max-height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;s
 }
 .sale_field h3{
 	font-family: Raleway;
@@ -403,26 +412,19 @@ header nav a:hover{
 
 
 
-
+/* Latest Projects */
 
 .latest_project{
-	  width: 1920px;
-    margin: auto;
+  text-align: center;
 }
-.latest_project .padding-side{
-	text-align: center;
-}
-
 .latest_project h2{
 	font-family: Raleway;
 	color:  #555555;
 	font-size: 30px;
 	font-weight: 600;
 	text-align: center;
-	
 	margin-top: 81px;
 }
-
 .latest_project p{
 	font-family: Montserrat;
 	color:  #8c8c8c;
@@ -435,7 +437,6 @@ header nav a:hover{
 	margin-top: 24px;
 	margin-bottom: 40px;
 }
-
 .latest_project .tags_btn{
 	text-decoration: none;
 	font-family: Montserrat;
@@ -452,7 +453,6 @@ header nav a:hover{
 	outline: 1px solid #ebebeb;
 	margin: 0 10px;
 }
-
 .latest_project .tags_btn:hover{
 	background-color:  #998675;
 	color:  #ffffff;
@@ -460,17 +460,32 @@ header nav a:hover{
 .last_project_blocks {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-top: 40px;
 }
-
 .proj_block {
 	outline: 1px solid black;
 	width: 370px;
 	height: 337px;
 	margin-bottom: 30px;
 }
+.project_1{
+  border-image: 
+}
 
 .latest_project .get_started{
-	margin-bottom: 10px;
+	margin-bottom: 80px;
+}
+
+
+
+
+.photo {
+  background-image: url("photo.png");
+  position: absolute;
+  left: 375px;
+  top: 2517px;
+  width: 374px;
+  height: 279px;
+  z-index: 158;
 }
