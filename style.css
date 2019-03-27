@@ -30,15 +30,10 @@
   box-sizing: border-box;
 */
 }
-
 .center-box {
   max-width: 1170px;
-  
-/*
-  border: 3px dashed red;
-  box-sizing: border-box;
-*/
 }
+
 
 /* * * * * Header * * * * */
 
@@ -110,6 +105,7 @@ header nav a:hover{
 .nav-button a:not(:last-child){
   margin-right: 30px;
 }
+
 
 /* * * * * Slider * * * * */
 
@@ -239,7 +235,6 @@ header nav a:hover{
 }
 
 
-
 /* Services */
 
 .services{
@@ -295,7 +290,6 @@ header nav a:hover{
 	width: 70px;
 	height: 3px;
 }
-
 
 @media screen and (max-width: 1128px) {
   .service_blocks {
@@ -418,7 +412,6 @@ header nav a:hover{
 	font-weight: 300;
 	text-align: left;
 }
-
 
 
 /* Latest Projects */
@@ -565,7 +558,6 @@ header nav a:hover{
 }
 
 
-
 /* Video Presentation */
 
 .video_presentation {
@@ -635,7 +627,6 @@ header nav a:hover{
 }
 
 
-
 /* Mobile Block */
 
 .mobile_block {
@@ -700,7 +691,6 @@ header nav a:hover{
 }
 
 
-
 /* Counters */
 
 .counters {
@@ -752,8 +742,6 @@ header nav a:hover{
   width: 30px;
   height: 2px;
 }
-
-
 
 
 /* recent-posts */
@@ -864,7 +852,6 @@ header nav a:hover{
   padding-top: 18px;
   padding-left: 28px
 }
-
 .post-blocks__item-info h4 {
   font-size: 20px;
   font-family: "Raleway";
@@ -876,7 +863,6 @@ header nav a:hover{
 .post-blocks__item:hover .post-blocks__item-info h4 {
   color: #c7b299;
 }
-
 .post-blocks__item-info p {
   font-size: 14px;
   font-family: "Montserrat";
@@ -887,7 +873,6 @@ header nav a:hover{
 .post-blocks__item:hover .post-blocks__item-info p {
   color: #fff;
 }
-
 .post-blocks__item-info a {
   font-size: 14px;
   font-family: "Montserrat";
@@ -922,7 +907,6 @@ header nav a:hover{
   justify-content: center;
   align-items: center;
 }
-
 .switch-btn-block .switch-btn{
   width: 22px;
   height: 22px;
@@ -943,11 +927,11 @@ header nav a:hover{
 .switch-btn-block .switch-btn:not(:last-child){
   margin-right: 30px;
 }
-
 .switch-btn-block .switch-btn__state_active {
   border-color: #cebba5;
   color: #cebba5;
 }
+
 
 /* Partners */
 
@@ -963,10 +947,149 @@ header nav a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
-
 .partners-logo:not(:last-child) {
   margin-right: 90px;
 }
 
+
+/* Footer */
+
+footer {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #191919;
+}
+.footer__info {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer__info h3 {
+  font-size: 24px;
+  font-family: "Raleway";
+  color: #fff;
+  font-weight: bold;
+  line-height: 3;
+}
+.footer__info-blocks {
+  text-align: left;
+  width: 270px;
+  height: 345px;
+}
+.footer__info .about p {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(85, 85, 85);
+  text-align: left;
+  line-height: 1.714;
+}
+.footer__info-blocks .logo{
+  text-decoration: none;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+.footer__info-blocks .readmore {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  margin-top: 30px;
+}
+.footer__info-blocks .readmore:hover {
+  text-decoration: underline;
+}
+.footer__info-blocks .readmore:after {
+  width: 0;
+  height: 0;
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 85px;
+  border-top: 4px solid transparent;
+  border-left: 4px solid #fff;
+  border-bottom: 4px solid transparent;
+}
+
+.footer__info-posts {
+  padding: 11px 0;
+}
+.footer__info-posts:not(:last-child){
+  border-bottom: 1px solid white;
+}
+.footer__info-posts:hover {
+  cursor: pointer;
+}
+.footer__info-blocks h5 {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: rgb(54, 54, 54);
+  text-align: left;
+  margin-bottom: 5px;
+}
+.footer__info-posts:hover h5 {
+  color: rgb(255, 255, 255);
+}
+.footer__info-blocks p {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(85, 85, 85);
+  text-align: left;
+  line-height: 1.714;
+}
+.footer__info-posts:hover p {
+  color: rgb(199, 178, 153);
+}
+
+
+.footer__twitter-posts {
+  padding: 11px 0;
+}
+.footer__twitter-posts:not(:last-child){
+  border-bottom: 1px solid white;
+}
+.footer__twitter-posts .tag {
+  color: #00bff3;
+}
+.footer__twitter-posts a {
+  color: #959595;
+  text-decoration: none;
+}
+.footer__twitter-posts .link:hover {
+  text-decoration: underline;
+}
+
+
+.footer__info .widget .widget-blocks {
+  width: 270px;
+  height: 207px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.widget-blocks .items {
+  width: 130px;
+  height: 98px;
+  background-repeat: no-repeat;
+}
+.widget-blocks .item-1 {
+  background-image: url(img/dribble-01.png);
+}
+.widget-blocks .item-2 {
+  background-image: url(img/dribble-02.png);
+}
+.widget-blocks .item-3 {
+  background-image: url(img/dribble-03.png);
+}
+.widget-blocks .item-4 {
+  background-image: url(img/dribble-04.png);
+}
 
